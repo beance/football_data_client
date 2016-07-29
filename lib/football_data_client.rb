@@ -61,7 +61,7 @@ module FootballDataClient
     private
 
     def connection
-      @connection ||= Faraday.new(url: API_ENDPOINT, headers: {'X-Auth-Token' => @api_key, 'X-@connection-Control' => @response_control})
+      @connection ||= Faraday.new(url: API_ENDPOINT, headers: {'X-Auth-Token' => @api_key, 'X-Response-Control' => @response_control})
     end
 
     def get(path)
